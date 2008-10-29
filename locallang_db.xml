@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'firefighter'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_firefighter_accidents">Accident</label>
+			<label index="tx_firefighter_accidents.title">Title</label>
+			<label index="tx_firefighter_accidents.date">date</label>
+			<label index="tx_firefighter_accidents.lat">Latitude</label>
+			<label index="tx_firefighter_accidents.lng">Longitude</label>
+			<label index="tx_firefighter_accidents.rgcat">rggooglemap category</label>
+			<label index="tx_firefighter_cars">Car</label>
+			<label index="tx_firefighter_cars.radioname">Radioname</label>
+			<label index="tx_firefighter_types">Accident-Type</label>
+			<label index="tx_firefighter_types.title">Title</label>
+			<label index="tx_firefighter_types.icon">Icon</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_firefighter_accidents">Einsatz</label>
+			<label index="tx_firefighter_accidents.title">Titel</label>
+			<label index="tx_firefighter_accidents.date">Datum</label>
+			<label index="tx_firefighter_accidents.lat">Breitengrad</label>
+			<label index="tx_firefighter_accidents.lng">Längengrad</label>
+			<label index="tx_firefighter_accidents.rgcat">Rggooglemap Kategorie</label>
+			<label index="tx_firefighter_cars">Fahrzeug</label>
+			<label index="tx_firefighter_cars.radioname">Funkrufname</label>
+			<label index="tx_firefighter_types">Einsatzart</label>
+			<label index="tx_firefighter_types.title">Bezeichnung</label>
+			<label index="tx_firefighter_types.icon">Icon</label>
+		</languageKey>
+	</data>
+</T3locallang>
