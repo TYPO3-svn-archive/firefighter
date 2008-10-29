@@ -71,6 +71,28 @@ class tx_firefighter_sv1 extends t3lib_svbase {
 	
 					return FALSE;
 				}
+				
+				function getTable($field='') {
+				  $tbl['lng'] = 'lng';
+				  $tbl['lat'] = 'lat';  
+				  $tbl['rggmcat'] = 'rgcat';            
+				 
+				  if ($field) return ($tbl[$field]) ? $tbl[$field] : $field;
+				  else return   $tbl;
+				}    
+				 
+				function mergeFields($string) {
+				  $whereFields = $this->getTable();
+				  $whereOld = array_keys($whereFields);
+				  $whereNew = array_values($whereFields);
+				  return str_replace($whereOld, $whereNew, $string);
+				}
+				 
+				function addressFields() {
+				  $address = 'title';
+				 
+				  return $address;
+				}
 }
 
 
