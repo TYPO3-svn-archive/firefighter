@@ -26,6 +26,8 @@ CREATE TABLE tx_firefighter_accidents (
 	lat tinytext NOT NULL,
 	lng tinytext NOT NULL,
 	rgcat tinytext NOT NULL,
+	cars blob NOT NULL,
+	type blob NOT NULL,
 	
 	PRIMARY KEY (uid),
 	KEY parent (pid),

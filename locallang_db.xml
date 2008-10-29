@@ -12,6 +12,8 @@
 			<label index="tx_firefighter_accidents.lat">Latitude</label>
 			<label index="tx_firefighter_accidents.lng">Longitude</label>
 			<label index="tx_firefighter_accidents.rgcat">rggooglemap category</label>
+			<label index="tx_firefighter_accidents.cars">Cars</label>
+			<label index="tx_firefighter_accidents.type">Accident-Type</label>
 			<label index="tx_firefighter_cars">Car</label>
 			<label index="tx_firefighter_cars.radioname">Radioname</label>
 			<label index="tx_firefighter_types">Accident-Type</label>
@@ -25,6 +27,8 @@
 			<label index="tx_firefighter_accidents.lat">Breitengrad</label>
 			<label index="tx_firefighter_accidents.lng">Längengrad</label>
 			<label index="tx_firefighter_accidents.rgcat">Rggooglemap Kategorie</label>
+			<label index="tx_firefighter_accidents.cars">Fahrzeuge</label>
+			<label index="tx_firefighter_accidents.type">Einsatzart</label>
 			<label index="tx_firefighter_cars">Fahrzeug</label>
 			<label index="tx_firefighter_cars.radioname">Funkrufname</label>
 			<label index="tx_firefighter_types">Einsatzart</label>

@@ -4,7 +4,7 @@ if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 $TCA["tx_firefighter_accidents"] = array (
 	"ctrl" => $TCA["tx_firefighter_accidents"]["ctrl"],
 	"interface" => array (
-		"showRecordFieldList" => "sys_language_uid,l18n_parent,l18n_diffsource,hidden,title,date,lat,lng,rgcat"
+		"showRecordFieldList" => "sys_language_uid,l18n_parent,l18n_diffsource,hidden,title,date,lat,lng,rgcat,cars,type"
 	),
 	"feInterface" => $TCA["tx_firefighter_accidents"]["feInterface"],
 	"columns" => array (
@@ -104,9 +104,33 @@ $TCA["tx_firefighter_accidents"] = array (
 				"max" => "30",
 			)
 		),
+		"cars" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.cars",		
+			"config" => Array (
+				"type" => "group",	
+				"internal_type" => "db",	
+				"allowed" => "tx_firefighter_cars",	
+				"size" => 10,	
+				"minitems" => 0,
+				"maxitems" => 100,
+			)
+		),
+		"type" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.type",		
+			"config" => Array (
+				"type" => "group",	
+				"internal_type" => "db",	
+				"allowed" => "tx_firefighter_types",	
+				"size" => 1,	
+				"minitems" => 0,
+				"maxitems" => 1,
+			)
+		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, title;;;;2-2-2, date;;;;3-3-3, lat, lng, rgcat")
+		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, title;;;;2-2-2, date;;;;3-3-3, lat, lng, rgcat, cars, type")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")
