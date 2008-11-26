@@ -65,6 +65,35 @@ $TCA["tx_firefighter_accidents"] = array (
 				"eval" => "required",
 			)
 		),
+		"location" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.location",		
+			"config" => Array (
+				"type" => "input",	
+				"size" => "40",	
+				"max" => "100",	
+			)
+		),
+		"description" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.description",		
+			"config" => Array (
+				"type" => "text",
+				"cols" => "30",
+				"rows" => "5",
+				"wizards" => Array(
+					"_PADDING" => 2,
+					"RTE" => array(
+						"notNewRecords" => 1,
+						"RTEonly" => 1,
+						"type" => "script",
+						"title" => "RTE",
+						"icon" => "wizard_rte2.gif",
+						"script" => "wizard_rte.php",
+					),
+				),
+			)
+		),
 		"date" => Array (		
 			"exclude" => 1,		
 			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.date",		
@@ -108,11 +137,12 @@ $TCA["tx_firefighter_accidents"] = array (
 			"exclude" => 1,		
 			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.cars",		
 			"config" => Array (
-				"type" => "group",	
-				"internal_type" => "db",	
-				"allowed" => "tx_firefighter_cars",	
-				"size" => 10,	
-				"minitems" => 0,
+				"type" => "select",	
+				"foreign_table" => "tx_firefighter_cars",	
+				"foreign_table_where" => "ORDER BY tx_firefighter_cars.sorting",
+				"foreign_label" => "radioname",
+				"size" => 5,
+				"default" => "",
 				"maxitems" => 100,
 			)
 		),
@@ -120,17 +150,16 @@ $TCA["tx_firefighter_accidents"] = array (
 			"exclude" => 1,		
 			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_accidents.type",		
 			"config" => Array (
-				"type" => "group",	
-				"internal_type" => "db",	
-				"allowed" => "tx_firefighter_types",	
-				"size" => 1,	
-				"minitems" => 0,
-				"maxitems" => 1,
+				"type" => "select",	
+				"foreign_table" => "tx_firefighter_types",	
+				"foreign_table_where" => "ORDER BY tx_firefighter_types.title",
+				"foreign_label" => "title",
+				"size" => 1,
 			)
 		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, title;;;;2-2-2, date;;;;3-3-3, lat, lng, rgcat, cars, type")
+		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, title;;;;2-2-2, date;;;;3-3-3, type, cars, location, description;;;richtext[paste|bold|italic|underline|formatblock|class|left|center|right|orderedlist|unorderedlist|outdent|indent|link|image]:rte_transform[mode=ts], lat, lng, rgcat")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")

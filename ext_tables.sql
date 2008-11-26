@@ -22,6 +22,8 @@ CREATE TABLE tx_firefighter_accidents (
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
 	title tinytext NOT NULL,
+	location tinytext NOT NULL,
+	description text NOT NULL,
 	date int(11) DEFAULT '0' NOT NULL,
 	lat tinytext NOT NULL,
 	lng tinytext NOT NULL,

@@ -8,6 +8,8 @@
 		<languageKey index="default" type="array">
 			<label index="tx_firefighter_accidents">Accident</label>
 			<label index="tx_firefighter_accidents.title">Title</label>
+			<label index="tx_firefighter_accidents.description">Description</label>
+			<label index="tx_firefighter_accidents.location">Location</label>
 			<label index="tx_firefighter_accidents.date">date</label>
 			<label index="tx_firefighter_accidents.lat">Latitude</label>
 			<label index="tx_firefighter_accidents.lng">Longitude</label>
@@ -22,7 +24,9 @@
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="tx_firefighter_accidents">Einsatz</label>
-			<label index="tx_firefighter_accidents.title">Titel</label>
+			<label index="tx_firefighter_accidents.title">Bezeichnung</label>
+			<label index="tx_firefighter_accidents.description">Beschreibung</label>
+			<label index="tx_firefighter_accidents.location">Einsatzort</label>
 			<label index="tx_firefighter_accidents.date">Datum</label>
 			<label index="tx_firefighter_accidents.lat">Breitengrad</label>
 			<label index="tx_firefighter_accidents.lng">Längengrad</label>
