@@ -52,7 +52,7 @@ $TCA["tx_firefighter_cars"] = array (
 		'iconfile'          => t3lib_extMgm::extRelPath($_EXTKEY).'icon_tx_firefighter_cars.gif',
 	),
 	"feInterface" => array (
-		"fe_admin_fieldList" => "sys_language_uid, l18n_parent, l18n_diffsource, hidden, radioname",
+		"fe_admin_fieldList" => "sys_language_uid, l18n_parent, l18n_diffsource, hidden, radioname, fullname, link, image",
 	)
 );
 

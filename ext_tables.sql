@@ -63,6 +63,9 @@ CREATE TABLE tx_firefighter_cars (
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
 	radioname tinytext NOT NULL,
+	fullname tinytext NOT NULL,
+	link tinytext NOT NULL,
+	image blob NOT NULL,
 	
 	PRIMARY KEY (uid),
 	KEY parent (pid),

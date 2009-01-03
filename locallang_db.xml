@@ -18,6 +18,9 @@
 			<label index="tx_firefighter_accidents.type">Accident-Type</label>
 			<label index="tx_firefighter_cars">Car</label>
 			<label index="tx_firefighter_cars.radioname">Radioname</label>
+			<label index="tx_firefighter_cars.fullname">Description</label>
+			<label index="tx_firefighter_cars.link">Link to detailpage</label>
+			<label index="tx_firefighter_cars.image">Image</label>
 			<label index="tx_firefighter_types">Accident-Type</label>
 			<label index="tx_firefighter_types.title">Title</label>
 			<label index="tx_firefighter_types.icon">Icon</label>
@@ -35,6 +38,9 @@
 			<label index="tx_firefighter_accidents.type">Einsatzart</label>
 			<label index="tx_firefighter_cars">Fahrzeug</label>
 			<label index="tx_firefighter_cars.radioname">Funkrufname</label>
+			<label index="tx_firefighter_cars.fullname">Bezeichnung</label>
+			<label index="tx_firefighter_cars.link">Link zur Detailseite</label>
+			<label index="tx_firefighter_cars.image">Bild</label>
 			<label index="tx_firefighter_types">Einsatzart</label>
 			<label index="tx_firefighter_types.title">Bezeichnung</label>
 			<label index="tx_firefighter_types.icon">Icon</label>

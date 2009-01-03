@@ -159,7 +159,7 @@ $TCA["tx_firefighter_accidents"] = array (
 		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, title;;;;2-2-2, date;;;;3-3-3, type, cars, location, description;;;richtext[paste|bold|italic|underline|formatblock|class|left|center|right|orderedlist|unorderedlist|outdent|indent|link|image]:rte_transform[mode=ts], lat, lng, rgcat")
+		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, title;;;;2-2-2, location, lat, lng, date;;;;3-3-3, type, cars, description;;;richtext[paste|bold|italic|underline|formatblock|class|left|center|right|orderedlist|unorderedlist|outdent|indent|link|image]:rte_transform[mode=ts], rgcat")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")
@@ -227,14 +227,60 @@ $TCA["tx_firefighter_cars"] = array (
 			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_cars.radioname",		
 			"config" => Array (
 				"type" => "input",	
+				"size" => "10",	
+				"max" => "100",	
+				"eval" => "required",
+			)
+		),
+		"fullname" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_cars.fullname",		
+			"config" => Array (
+				"type" => "input",	
 				"size" => "30",	
 				"max" => "100",	
 				"eval" => "required",
 			)
 		),
+		"link" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_cars.link",		
+			"config" => Array (
+				"type"     => "input",
+				"size"     => "15",
+				"max"      => "255",
+				"checkbox" => "",
+				"eval"     => "trim",
+				"wizards"  => array(
+					"_PADDING" => 2,
+					"link"     => array(
+						"type"         => "popup",
+						"title"        => "Link",
+						"icon"         => "link_popup.gif",
+						"script"       => "browse_links.php?mode=wizard",
+						"JSopenParams" => "height=300,width=500,status=0,menubar=0,scrollbars=1"
+					)
+				)
+			)
+		),
+		"image" => Array (		
+			"exclude" => 1,		
+			"label" => "LLL:EXT:firefighter/locallang_db.xml:tx_firefighter_cars.image",		
+			"config" => Array (
+				"type" => "group",
+				"internal_type" => "file",
+				"allowed" => "gif,png,jpeg,jpg",	
+				"max_size" => 500,	
+				"uploadfolder" => "uploads/tx_firefighter",
+				"show_thumbs" => 1,	
+				"size" => 1,	
+				"minitems" => 0,
+				"maxitems" => 1,
+			)
+		),
 	),
 	"types" => array (
-		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, radioname")
+		"0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, hidden;;1, radioname, fullname, link, image")
 	),
 	"palettes" => array (
 		"1" => array("showitem" => "")
