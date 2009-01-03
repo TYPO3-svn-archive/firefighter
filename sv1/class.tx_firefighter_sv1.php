@@ -89,7 +89,7 @@ class tx_firefighter_sv1 extends t3lib_svbase {
 				}
 				 
 				function addressFields() {
-				  $address = 'title';
+				  $address = 'location';
 				 
 				  return $address;
 				}
