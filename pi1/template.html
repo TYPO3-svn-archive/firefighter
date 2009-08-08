@@ -1,0 +1,51 @@
+<!--###LIST_TABLE###-->
+<ol class="einsaetze">
+	<!--###LIST_TABLE_ROW###-->
+	<li value="###NR###">
+	  <em>###DATE_BEGIN###</em>
+	  ###TITLE###
+	  <!--###GEO_SCRIPT###-->
+	  <script type="text/javascript">
+	  /* <![CDATA[ */
+	  if(document.getElementById('googlemap')) {
+	    var Icon = '###TYPE_ICON###';
+	  	map.addOverlay(createMarker(new GLatLng(###GEO###), '###DATE_BEGIN###<br /><br />###TITLE###', Icon));
+	  }
+	  /* ]]> */
+	  </script>
+	  <!--###GEO_SCRIPT###-->
+	</li>
+	<!--###LIST_TABLE_ROW###-->
+</ol>
+<!--###LIST_TABLE###-->
+
+
+
+<!--###SINGLE_VIEW###-->
+<h2>###TITLE###</h2>
+<p>Einsatzart: ###TYPE###<br />
+Beginn: ###DATE_BEGIN###<br />
+Ende: ###DATE_END###<br />
+Ort: ###LOCATION###</p>
+<h2>Beschreibung:</h2>
+<p>###DESCRIPTION###</p>
+<h2>Fahrzeuge:</h2>
+<ul class="fahrzeuge">
+<!--###CAR_ITEM###-->
+<li><a href="###LINK###"><img src="###IMAGE###" alt="###NAME###" /><br />###NAME###</a></li>
+<!--###CAR_ITEM###-->
+</ul>
+<br style="clear:both;" />
+<small>Eintrag erstellt am ###CREATED### ###EDIT_PANEL###</small>
+<!--###GEO_SCRIPT###-->
+<script type="text/javascript">
+/* <![CDATA[ */
+if(document.getElementById('googlemap')) {
+	var Icon = '###TYPE_ICON###';
+	map.addOverlay(createMarker(new GLatLng(###GEO###), '', Icon));
+	map.setCenter(new GLatLng(###GEO###), 13);
+}
+/* ]]> */
+</script>
+<!--###GEO_SCRIPT###-->
+<!--###SINGLE_VIEW###-->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_firefighter_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="listFieldHeader_datefrom">Einsatzbeginn</label>
+			<label index="listFieldHeader_dateto">Ensatzende</label>
+			<label index="listFieldHeader_title">Bezeichnung</label>
+			<label index="listFieldHeader_location">Ort</label>
+			<label index="listFieldHeader_description">Beschreibung</label>
+			<label index="listFieldHeader_cars">Fahrzeuge</label>
+			<label index="listFieldHeader_type">Einsatzart</label>
+			<label index="list_mode_1">Mode 1</label>
+			<label index="list_mode_2">Mode 2</label>
+			<label index="list_mode_3">Mode 3</label>
+			<label index="pi_list_browseresults_prev">&lt; Vorherige</label>
+			<label index="pi_list_browseresults_page">Seite</label>
+			<label index="pi_list_browseresults_next">Weiter &gt;</label>
+			<label index="pi_list_browseresults_displays">Zeige Ergebnis ###SPAN_BEGIN###%s bis %s&lt;/span&gt; von ###SPAN_BEGIN###%s&lt;/span&gt;</label>
+			<label index="pi_list_searchBox_search">Suchen</label>
+		</languageKey>
+	</data>
+</T3locallang>

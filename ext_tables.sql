@@ -1,7 +1,7 @@
 #
-# Table structure for table 'tx_firefighter_accidents'
+# Table structure for table 'tx_firefighter_einsatz'
 #
-CREATE TABLE tx_firefighter_accidents (
+CREATE TABLE tx_firefighter_einsatz (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
@@ -21,15 +21,16 @@ CREATE TABLE tx_firefighter_accidents (
 	l18n_diffsource mediumblob NOT NULL,
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
+	starttime int(11) DEFAULT '0' NOT NULL,
+	endtime int(11) DEFAULT '0' NOT NULL,
+	datefrom int(11) DEFAULT '0' NOT NULL,
+	dateto int(11) DEFAULT '0' NOT NULL,
 	title tinytext NOT NULL,
 	location tinytext NOT NULL,
 	description text NOT NULL,
-	date int(11) DEFAULT '0' NOT NULL,
-	lat tinytext NOT NULL,
-	lng tinytext NOT NULL,
-	rgcat tinytext NOT NULL,
 	cars blob NOT NULL,
 	type blob NOT NULL,
+	geo_coords tinytext NOT NULL,
 	
 	PRIMARY KEY (uid),
 	KEY parent (pid),
@@ -62,8 +63,9 @@ CREATE TABLE tx_firefighter_cars (
 	sorting int(10) DEFAULT '0' NOT NULL,
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
-	radioname tinytext NOT NULL,
-	fullname tinytext NOT NULL,
+	starttime int(11) DEFAULT '0' NOT NULL,
+	endtime int(11) DEFAULT '0' NOT NULL,
+	name tinytext NOT NULL,
 	link tinytext NOT NULL,
 	image blob NOT NULL,
 	
@@ -75,9 +77,9 @@ CREATE TABLE tx_firefighter_cars (
 
 
 #
-# Table structure for table 'tx_firefighter_types'
+# Table structure for table 'tx_firefighter_type'
 #
-CREATE TABLE tx_firefighter_types (
+CREATE TABLE tx_firefighter_type (
 	uid int(11) NOT NULL auto_increment,
 	pid int(11) DEFAULT '0' NOT NULL,
 	tstamp int(11) DEFAULT '0' NOT NULL,
@@ -97,7 +99,7 @@ CREATE TABLE tx_firefighter_types (
 	l18n_diffsource mediumblob NOT NULL,
 	deleted tinyint(4) DEFAULT '0' NOT NULL,
 	hidden tinyint(4) DEFAULT '0' NOT NULL,
-	title tinytext NOT NULL,
+	name tinytext NOT NULL,
 	icon blob NOT NULL,
 	
 	PRIMARY KEY (uid),

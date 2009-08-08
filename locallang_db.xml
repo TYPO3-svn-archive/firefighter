@@ -6,44 +6,35 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tx_firefighter_accidents">Accident</label>
-			<label index="tx_firefighter_accidents.title">Title</label>
-			<label index="tx_firefighter_accidents.description">Description</label>
-			<label index="tx_firefighter_accidents.location">Location</label>
-			<label index="tx_firefighter_accidents.date">date</label>
-			<label index="tx_firefighter_accidents.lat">Latitude</label>
-			<label index="tx_firefighter_accidents.lng">Longitude</label>
-			<label index="tx_firefighter_accidents.rgcat">rggooglemap category</label>
-			<label index="tx_firefighter_accidents.cars">Cars</label>
-			<label index="tx_firefighter_accidents.type">Accident-Type</label>
-			<label index="tx_firefighter_cars">Car</label>
-			<label index="tx_firefighter_cars.radioname">Radioname</label>
-			<label index="tx_firefighter_cars.fullname">Description</label>
-			<label index="tx_firefighter_cars.link">Link to detailpage</label>
-			<label index="tx_firefighter_cars.image">Image</label>
-			<label index="tx_firefighter_types">Accident-Type</label>
-			<label index="tx_firefighter_types.title">Title</label>
-			<label index="tx_firefighter_types.icon">Icon</label>
-		</languageKey>
-		<languageKey index="de" type="array">
-			<label index="tx_firefighter_accidents">Einsatz</label>
-			<label index="tx_firefighter_accidents.title">Bezeichnung</label>
-			<label index="tx_firefighter_accidents.description">Beschreibung</label>
-			<label index="tx_firefighter_accidents.location">Einsatzort</label>
-			<label index="tx_firefighter_accidents.date">Datum</label>
-			<label index="tx_firefighter_accidents.lat">Breitengrad</label>
-			<label index="tx_firefighter_accidents.lng">Längengrad</label>
-			<label index="tx_firefighter_accidents.rgcat">Rggooglemap Kategorie</label>
-			<label index="tx_firefighter_accidents.cars">Fahrzeuge</label>
-			<label index="tx_firefighter_accidents.type">Einsatzart</label>
+			<label index="tx_firefighter_einsatz">Einsatz</label>
+			<label index="tx_firefighter_einsatz.datefrom">Einsatzbeginn</label>
+			<label index="tx_firefighter_einsatz.dateto">Ensatzende</label>
+			<label index="tx_firefighter_einsatz.title">Bezeichnung</label>
+			<label index="tx_firefighter_einsatz.location">Ort</label>
+			<label index="tx_firefighter_einsatz.description">Beschreibung</label>
+			<label index="tx_firefighter_einsatz.cars">Fahrzeuge</label>
+			<label index="tx_firefighter_einsatz.type">Einsatzart</label>
+			<label index="tx_firefighter_einsatz.geo_coords">Google GEO-Koordinaten</label>
 			<label index="tx_firefighter_cars">Fahrzeug</label>
-			<label index="tx_firefighter_cars.radioname">Funkrufname</label>
-			<label index="tx_firefighter_cars.fullname">Bezeichnung</label>
-			<label index="tx_firefighter_cars.link">Link zur Detailseite</label>
+			<label index="tx_firefighter_cars.name">Rufname</label>
+			<label index="tx_firefighter_cars.link">Link zur Detailansicht</label>
 			<label index="tx_firefighter_cars.image">Bild</label>
-			<label index="tx_firefighter_types">Einsatzart</label>
-			<label index="tx_firefighter_types.title">Bezeichnung</label>
-			<label index="tx_firefighter_types.icon">Icon</label>
+			<label index="tx_firefighter_type">Einsatzart</label>
+			<label index="tx_firefighter_type.name">Bezeichnung</label>
+			<label index="tx_firefighter_type.icon">Icon</label>
+			<label index="tt_content.list_type_pi1">Einsatz Liste</label>
+			<label index="tt_content.list_type_pi2">Einsatz Detailansicht</label>
+			<label index="tt_content.pi_flexform.sheet_general">Allgemein</label>
+			<label index="tt_content.pi_flexform.detailview">Detailansicht</label>
+			<label index="tt_content.pi_flexform.template_file">Template</label>
+			<label index="tt_content.pi_flexform.max_anzahl">Max. Anzahl (0=Alle)</label>
+			<label index="tt_content.pi_flexform.date_from">Von Datum</label>
+			<label index="tt_content.pi_flexform.date_to">Bis Datum</label>
+			<label index="tt_content.pi_flexform.sheet_display">Anzeige Einstellungen</label>
+			<label index="tt_content.pi_flexform.show_search">Suche anzeigen</label>
+			<label index="tt_content.pi_flexform.sheet_error">zzzzz 5678</label>
+			<label index="tt_content.pi_flexform.show_errors">zzzzz Test2</label>
+			<label index="tt_content.pi_flexform.prepend_text">zzzzz Test3</label>
 		</languageKey>
 	</data>
 </T3locallang>
